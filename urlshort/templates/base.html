@@ -1,0 +1,141 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <title>Gitb.in</title>
+  </head>
+  <body style="margin: auto;">
+    <!-- Image and text -->
+<!-- Image and text -->
+<!-- As a link -->
+<nav class="navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">GITB.in</a>
+  </div>
+</nav>
+  <header>
+    <div style="padding: 40px 20px 25px; text-align: center;">
+      <a href="https://www.gitb.in/" style="font: 900 49px asap,arial;
+    color: #0186da;
+    letter-spacing: -1px;
+    text-shadow: 0 2px 2px #ddd;
+    word-wrap: break-word;">URL Shortener</a>
+    </div>
+  </header>
+    {% block body %} 
+      
+  {% endblock body %}
+<div class="container-fluid col-lg-6">
+  <h3 style="font-size:30px;"><b>Simple and fast shortened URL !</b></h3>
+  <p class="mt-2"> GitBin allows to reduce long links from every sites on the Internet, just paste the long URL and click the Generate button. On the next screen,Click on Copy URL button to copt the shortened URL and share it on websites, chat and e-mail. After shortening the URL,It will redirect you to the original URL within a second.</p></div>
+<br><br>
+  <hr>
+<div class="container-fluid col-lg-8 mt-4">
+  <div class="card-deck">
+  <div class="card">
+    <div class="sevices-img text-center py-5 ml-3">
+    <img src="{% static 'img/1.png' %}" style="margin-left:80px;" alt="...">
+  </div>
+    <div class="card-body">
+      <b><h5 class="card-title">Easy</h5></b>
+      <p class="card-text">GITB.in is easy and fast, enter the long URL to get your shortened link</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="sevices-img text-center py-5 ml-3">
+    <img src="{% static 'img/2.png' %}" style="margin-left:80px;" alt="...">
+  </div>
+    <div class="card-body">
+      <b><h5 class="card-title">Reliable</h5></b>
+      <p class="card-text">All links that try to disseminate spam, viruses and malware are deleted</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="sevices-img text-center py-5 ml-3">
+    <img src="{% static 'img/3.png' %}" style="margin-left:80px;" alt="...">
+  </div>
+    <div class="card-body">
+      <b><h5 class="card-title">Secure & fast</h5></b>
+      <p class="card-text">It is fast and secure, our service have HTTPS protocol and data encryption</p>
+    </div>
+  </div>
+</div>
+</div>
+
+  <footer class="text-gray-600 body-font mt-12">
+  <div class="bg-gray-100">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Gitbin —
+        <a href="#" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@gitbin</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+</footer>
+
+
+</body>
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- url copy javascript -->
+    <script type="text/javascript">
+      function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("shortenurl");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "URL Copied ! "
+} 
+    </script>
+  </body>
+</html>

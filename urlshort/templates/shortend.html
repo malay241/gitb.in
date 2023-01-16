@@ -1,0 +1,23 @@
+{% extends 'base.html' %} 
+
+{% block body %}
+
+<div class="container-fluid">
+    <div class="p-4 m-4">
+        <div class="col-lg-5 mx-auto border rounded pt-4">
+            <h3 class="alert alert-light border rounded">Your Shortend link<i class="fas fa-link px-2"></i></h3>
+            <form action="/" method="POST">
+              <input id="shortenurl" type="text" class="form-control"  value="{{url_short}}" placeholder="Shortened URL">
+              <div id="formbutton" class="tool">
+                <input type="button" class="copy btn btn-primary mt-4 mb-4" value="Copy URL" onclick="myFunction()">
+                <span class="tooltiptext" id="myTooltip"></span>
+                
+        <p><span class="text-danger">Previous URL:</span> {{url}}</p>
+              </div>
+        </div>
+            </form>
+        </div>
+    </div>
+</div>
+  
+{% endblock %}

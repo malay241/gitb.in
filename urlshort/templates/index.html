@@ -1,0 +1,27 @@
+{% extends 'base.html' %} 
+
+{% block body %}
+
+<div class="container-fluid">
+    <div class="p-4 m-4">
+        <div class="col-lg-5 mx-auto border rounded pt-4">
+            <h3 class="alert alert-light border rounded">Generate your Shortend link<i class="fas fa-link px-2"></i></h3>
+            <form action="/" method="POST">
+              {% csrf_token %}
+              {% if error %}
+              <div class="alert alert-danger" role="alert">
+                  {{error}}
+              </div>
+              {% endif %}
+              <div class="mb-3">
+                  <label class="form-label">Enter your URL</label>
+                  <input type="text" required name="url" class="form-control" id="url" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">The link you are tired off.</div>
+              </div>
+               <button type="submit" class="btn btn-primary mb-3">Generate</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+   
